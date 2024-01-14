@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="jisuda.ico" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" /> 
+
     <title>极速达开锁</title>
     <style>
    
 
         .d1{
-            width: 50%;
+            width: 100%;
             height: 50%;
             margin: 0px auto;   
             overflow: hidden;
@@ -63,19 +64,22 @@
             color: white;
             text-align: center;
         }
+        .d1 img{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <div class="d1">
-            <img src="jisuda.jpg" alt="jisuda" class="jsd">
+        <img src="jisuda.jpg" alt="jisuda" class="jsd">
        <div class="text_inner">
             <p>开锁换锁报价明细</p>
        </div>
        <div class="i_d">
-        <input class="choice choiceCss" type="button" style="color: blue;"  value="基础服务" onclick="choosed(this)" id="btn1">
-        <input class="choice choiceCss" type="button" value="更换锁芯" onclick="choosed(this)" id="btn2">
-        <input class="choice choiceCss" type="button" value="更换把手" onclick="choosed(this)" id="btn3">
-        <input class="choice choiceCss" type="button" value="更换锁体" onclick="choosed(this)" id="btn4">
+        <input type="button" style="color: blue;"  value="基础服务" onclick="choosed(this)" id="btn1">
+        <input type="button" value="更换锁芯" onclick="choosed(this)" id="btn2">
+        <input type="button" value="更换把手" onclick="choosed(this)" id="btn3">
+        <input type="button" value="更换锁体" onclick="choosed(this)" id="btn4">
        </div>
        <!-- 
             基本服务
